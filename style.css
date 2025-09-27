@@ -113,3 +113,62 @@ footer {
     text-align: center;
 }
 /* footer */
+
+/* Mobile Responsive */
+@media (max-width: 992px) {
+   /* hero */
+   #hero {
+    text-align: center;
+   }
+
+   #hero h1 {
+    font-size: 40px;
+   }
+
+   #hero img {
+    margin-top: 30px;
+   }
+
+   #hero .action {
+    justify-content: center;
+   }
+   /* hero */
+
+   /* layanan */
+   #layanan img {
+    margin-top: 30px;
+   }
+   /* layanan */
+
+   /* profil */
+   #profil {
+    text-align: center;
+   }
+
+   #profil img {
+    margin-bottom: 30px;
+   }
+
+   #profil h1 {
+    font-size: 40px;
+   }
+   
+   #profil p {
+    width: auto;
+    text-align: center;
+   }
+   /* profil */
+
+   /* portofolio */
+   #portofolio .card {
+    margin-top: 30px;
+   }
+   /* portofolio */
+
+   /* cta */
+   #cta .bg {
+    background-image: none;
+   }
+   /* cta */
+}
+/* Mobile Responsive */
