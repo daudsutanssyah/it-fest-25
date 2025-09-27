@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pasarium - Digital Agency</title>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div id="contact" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
+            <a class="text-link" href="./index.html">< Kembali ke Beranda</a>
+
+            <div class="card border-0 shadow-sm text-center mt-5">
+              <div class="card-body">
+                <img src="./assets/logo.png" alt="" width="30%" />
+              </div>
+            </div>
+            <h2 class="text-center my-5">Ayo Mulai Kerjasama Bareng Kami!</h2>
+
+            <form id="collabForm">
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Masukkan nama kamu"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Masukkan email aktif"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Pesan</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  rows="4"
+                  placeholder="Ceritakan kebutuhanmu di sini..."
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-utama w-100">
+                Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // handle form submit
+      // kode javascript di dalam html harus berada di halam script
+      document
+        .getElementById("collabForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          Swal.fire({
+            title: "Yeay",
+            text: "Berhasil kirim pesan, kami akan segera menghubungi balik!",
+            icon: "success",
+            confirmButtonText: "Oke siap",
+          });
+          
+          // reset form
+          this.reset();
+        });
+    </script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

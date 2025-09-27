@@ -1,0 +1,115 @@
+.btn-utama {
+  background-color: #119da4 !important;
+  color: white !important;
+}
+.btn-utama:hover {
+  box-shadow: 0px 10px 10px rgba(12, 169, 143, 0.2);
+  transform: scale(1.1);
+  transition: all ease 300ms;
+}
+
+.text-link {
+  color: #119da4;
+}
+
+/* navbar */
+.navbar {
+  background-color: white;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.02);
+  /* box-shadow: offset-x offset-y blur-radius color; */
+}
+
+.navbar-brand img {
+  width: 70%;
+}
+.navbar-nav {
+  margin-left: auto;
+}
+.nav-link:hover {
+  color: #119da4 !important;
+  font-weight: bold;
+  /* border-bottom: tebal gaya color */
+  border-bottom: 2px solid #119da4;
+  transition: all ease 300ms;
+}
+#hero {
+  margin-top: 100px;
+}
+#hero h1 {
+  font-size: 60px;
+}
+#hero img {
+  width: 100%;
+}
+/* layanan */
+#layanan {
+  margin-top: 100px;
+}
+#layanan .card {
+  border: none;
+}
+#layanan .card-title {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+}
+#layanan .card:hover {
+  box-shadow: 0px 10px 10px rgba(12, 169, 143, 0.2);
+  transform: scale(1.1);
+  transition: all ease 300ms;
+}
+/* layanan */
+
+/* profil */
+#profil {
+    margin-top: 100px;
+}
+#profil img {
+    width: 100%;
+}
+#profil h1 {
+    font-size: 60px;
+} 
+#profil span {
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+#profil p {
+    width: 90%;
+}
+/* profil */
+
+/* portfolio */
+#portfolio {
+    margin-top: 100px;
+}
+#portfolio .card {
+    border: none;
+    text-align: center;
+}
+/* portfolio */
+
+/* cta */
+#cta {
+    margin-top: 100px;
+}
+#cta .bg {
+    background-image: url(./assets/bg-cta.png);
+    background-size: cover;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+/* cta */
+
+/* footer */
+footer {
+    margin-top: 50px;
+    background-color: #119da4;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+/* footer */
